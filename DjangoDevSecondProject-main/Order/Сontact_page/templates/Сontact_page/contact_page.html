@@ -1,0 +1,31 @@
+{% extends 'APP_Settings/base.html' %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static  'APP_Settings/css/base.css' %}">
+    <link rel="stylesheet" href="{% static  'APP_Settings/css/contact-page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="open_page">
+        <p>Сторінка контактів</p>
+
+    </div>
+
+    <div id="contacts">
+        <!-- <img id="contacts_img" src="{% static 'APP_Settings/img/contacts.png' %}" alt="contacts"> -->
+        
+        <a class="github_accounts" href="https://github.com/FeliksNovoselskyi/DjangoDevSecondProject">
+            <img id="github_contact" src="{% static 'APP_Settings/img/github.png' %}" alt="github">
+        </a>
+        <a class="address_mobile_contacts github_a" href="https://github.com/FeliksNovoselskyi/DjangoDevSecondProject">GitHub</a>
+
+        <img id="mobile_contact" src="{% static 'APP_Settings/img/mobile.png' %}" alt="mobile">
+        <p class="address_mobile_contacts">+380 00 000 00 00</p>
+
+        <img id="address_contact" src="{% static 'APP_Settings/img/address.png' %}" alt="address">
+        <p class="address_mobile_contacts">вулиця Івана Акінфієва, 18, Дніпро</p>
+        <!-- <p id="contacts_github_paragraph">GitHub</p> -->
+    </div>
+
+{% endblock %}

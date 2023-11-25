@@ -1,0 +1,55 @@
+{% extends 'APP_Settings/base.html' %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static  'APP_Settings/css/base.css' %}">
+    <link rel="stylesheet" href="{% static  'APP_Settings/css/main-page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="open_page">
+        <p>Головна сторінка</p>
+    </div>
+
+    <div id="header-div">
+        <img class="header-div-images" src="{% static 'APP_Settings/img/main_contact_img.png' %}" alt="main_contact_image">
+        <p class="header-div-paragraph">Контакти</p>
+        
+        <img class="header-div-images" src="{% static 'APP_Settings/img/main_bucket_img.png' %}" alt="main_bucket_image">
+        <p class="header-div-paragraph">Корзина</p>
+
+        <img class="header-div-images hdi3" src="{% static 'APP_Settings/img/main_product_img.png' %}" alt="main_product_image">
+        <p class="header-div-paragraph">Товари</p>
+
+        <img class="header-div-images hdi4" src="{% static 'APP_Settings/img/main_authorization_img.png' %}" alt="main_authorization_image">
+        <p class="header-div-paragraph">Вхід</p>
+    </div>
+
+    <div id="main-div">
+        <img id="main-image" src="{% static 'APP_Settings/img/main_image.png' %}" alt="main_image">
+        <div id="text-div">
+            <h2>Вітаємо на нашому сайті!</h2>
+            <p>Сайт має 6 сторінок, кожна з них має свій особистий функціонал. 
+                На сайті є продукти з можливістю додавання у корзину. 
+                <br>Також присутня авторизація та реєстрація. 
+                Також ви можете зв'язатися з розробниками використовуючи сторінку контактів.</p>
+                
+            <h2>Сторінка контактів</h2>
+            <p>На сторінці контактів розташовані посилання на Git проекту, номер телефону та фізичну адресу.</p>
+            
+            <h2>Сторінка продуктів</h2>
+            <p>Сайт має 4 смартфона, з яких 3 Samsung-а, 1 iPhone та 1 Motorola-а, на цій сторінці є гарні кнопки які пересилають на іншу сторінку.</p>
+
+            <h2>Сторінка авторизації та реєстрації</h2>
+            <p>На сторінці авторизації ви маєте змогу авторизуватись на сайті, якщо в вас вже є аккаунт.
+                <br>У іншому випадку якщо ви бажаєте мати аккаунт на сайті ви маєте перейти до сторінки реєстрації.
+                <br>На сторінці реєстрації ви маєте зареєструватись, після чого знову пройти авторизацію 
+                з вже існуючим аккаунтом.
+            </p>
+
+            <h2>Сторінка корзини</h2>
+            <p>На сторінці корзини відображаються товари які ви додаєте до но неї на сторінці продуктів.</p>
+        </div>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,68 @@
+#contacts{
+    display: flex;
+    width: 15%;
+    padding: 5px 5px;
+    background-color: rgb(149, 189, 238);
+    border: 0px solid rgb(149, 189, 238);
+    border-radius: 16px;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 75px;
+    margin-left: 12px;
+    flex-direction: column;
+    transition: all 300ms ease-in-out;
+}
+
+#contacts:hover{
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px rgb(38, 38, 38);
+    background-color: rgb(128, 168, 215);
+    border: 0px solid transparent;
+}
+
+#github_contact{
+    width: 60px;
+    height: 60px;
+}
+
+#mobile_contact{
+    width: 65px;
+    height: 65px;
+}
+
+#address_contact{
+    width: 60px;
+    height: 60px;
+}
+
+
+.github_accounts{
+    color: rgb(17, 124, 231);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    margin-left: 5px;
+}
+
+.address_mobile_contacts{
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5px;
+    margin-right: 15px;
+    user-select: none;
+}
+
+.github_a{
+    color: rgb(38, 38, 38);
+    transition: all 200ms ease-in-out;
+}
+
+.github_a:hover{
+    color: rgb(17, 14, 14);
+    text-shadow: 0px 0px 1px rgb(17, 14, 14);
+}

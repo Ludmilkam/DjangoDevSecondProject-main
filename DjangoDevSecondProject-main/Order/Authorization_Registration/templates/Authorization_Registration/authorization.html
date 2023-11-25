@@ -1,0 +1,27 @@
+{% extends 'APP_Settings/base.html' %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static  'APP_Settings/css/base.css' %}">
+    <link rel="stylesheet" href="{% static  'APP_Settings/css/authorization-page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="open_page">
+        <p>Сторінка авторизації</p>
+    </div>
+
+    <form action="" class="auth_reg_form" method="POST">
+        {% csrf_token %}
+        <input type="text" class="auth_text" placeholder="Логін" name="username">
+        <input type="password" class="auth_text" placeholder="Пароль" name="password">
+
+        {% if error %}
+            <p class="error">{{error}}</p>
+        {% endif %}
+
+        <input type="submit" id="auth_submit" value="Підтвердити">
+    </form>
+    
+    
+{% endblock %}

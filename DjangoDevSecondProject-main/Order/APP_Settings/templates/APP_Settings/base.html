@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'APP_Settings/css/style.css' %}">
+    <title>Document</title>
+    {% block links %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <a class="pages_a" href="{% url 'main_page' %}">Головна</a>
+        <a class="pages_a" href="{% url 'contact_page' %}">Контакти</a>
+        <a class="pages_a" href="{% url 'shop_cart_page' %}">Корзина</a>
+        <a class="pages_a" href="{% url 'product_page' %}">Продукти</a>
+        <a class="pages_a" href="{% url 'auth_page' %}">Авторизація</a>
+        <a class="pages_a" href="{% url 'reg_page' %}">Реєстрація</a>
+    </header>
+
+    <main>
+        {% block content %}
+        
+        {% endblock %}
+    </main>
+
+    <footer>
+
+        <a class="footer_a pages_a" href="{% url 'main_page' %}">Головна</a>
+        <a class="footer_a pages_a" href="{% url 'contact_page' %}">Контакти</a>
+        <a class="footer_a pages_a" href="{% url 'shop_cart_page' %}">Корзина</a>
+        <a class="footer_a pages_a" href="{% url 'product_page' %}">Продукти</a>
+        <a class="footer_a pages_a" href="{% url 'auth_page' %}">Авторизація</a>
+        <a class="footer_a pages_a" href="{% url 'reg_page' %}">Реєстрація</a>
+    </footer>
+    
+
+</body>
+</html>

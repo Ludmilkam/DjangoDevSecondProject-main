@@ -1,0 +1,50 @@
+{% extends 'APP_Settings/base.html' %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static  'APP_Settings/css/base.css' %}">
+    <link rel="stylesheet" href="{% static  'APP_Settings/css/registration-page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="open_page">
+        <p>Сторінка реєстрації</p>
+    </div>
+
+    <form method="POST" class="auth_reg_form">
+        {% csrf_token %}
+        <input type="text" 
+                name="username"  
+                class="reg_text" 
+                placeholder="Логін"
+                value="{{username}}"
+                >
+
+        <input type="password" 
+                name="password"  
+                class="reg_text" 
+                placeholder="Пароль"
+                value="{{password}}">
+
+        <input type="email" 
+                name="email"  
+                class="reg_text" 
+                placeholder="Пошта"
+                value="{{email}}"
+                >
+                
+        <input type="text" 
+                name="phone"  
+                class="reg_text" 
+                placeholder="Телефон"
+                value="{{phone}}"
+                >
+
+        {% if error %}
+            <p class="error">{{error}}</p>
+        {% endif %}
+        
+        <input type="submit" id="reg_submit" value="Підтвердити">
+    </form>
+    
+{% endblock %}

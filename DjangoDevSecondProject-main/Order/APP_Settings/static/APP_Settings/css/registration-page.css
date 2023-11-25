@@ -1,0 +1,38 @@
+#reg_submit{
+    color: rgb(176, 173, 173);
+    background-color: rgb(47, 42, 42);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1.5px solid rgb(47, 42, 42);
+    border-radius: 12px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+#reg_submit:hover{
+    color: rgb(47, 42, 42);
+    background-color: transparent;
+    border-radius: 16px;
+}
+
+
+.reg_text {
+    font-size: 32px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1.5px solid rgb(47, 42, 42);
+    outline: none;
+    transition: all 300ms ease-in-out;
+    width: 250px;
+    color: rgb(47, 42, 42);
+}
+
+.reg_text:hover{
+    border-radius: 16px;
+    border: 1.5px solid transparent;
+    background-color: rgb(47, 42, 42);
+    color: rgb(176, 173, 173);
+    box-shadow: 0px 0px 10px rgb(47, 42, 42);
+}

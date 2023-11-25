@@ -1,0 +1,235 @@
+header{
+    display: flex;
+    background-color: rgb(216, 216, 216);
+    border-bottom-right-radius: 20px;
+    padding: 5px 5px;
+    text-align: center;
+    z-index: 10;
+    margin-top: -60px;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    animation: headerStartAnimation 1s ease-out;
+    transition: all 300ms ease-in-out;
+    margin-top: 0px;
+}
+
+header:hover{
+    background-color: rgb(202, 202, 202);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 1px 2px;
+    box-shadow: 0px 0px 6px rgb(38, 38, 38);
+    margin-bottom: 10px;
+}
+
+main{
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(216, 216, 216);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px 15px;
+    text-align: right;
+    z-index: 10;
+    position: absolute;
+    left: -1850px;
+    bottom: 10px;
+    width: 98%;
+    transition: all 1.5s ease-in-out;
+}
+
+footer:hover{
+    left: 3.75px;
+    background-color: rgb(202, 202, 202);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px 15px;
+    box-shadow: 0px 0px 6px rgb(38, 38, 38);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+    user-select: none;
+}
+
+h1{
+    color: rgb(48, 46, 46);
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    transition: all 175ms ease-in-out;
+}
+
+h1:hover{
+    color: rgb(33, 31, 31);
+    text-shadow: 0px 0px 1.25px rgb(33, 31, 31);
+    font-size: 22.3px;
+    margin-bottom: 5px;
+}
+
+h2{
+    color: rgb(60, 59, 59);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    transition: all 300ms ease-in-out;
+}
+
+h2:hover{
+    color: rgb(36, 34, 34);
+    text-shadow: 0px 0px 1.25px rgb(33, 31, 31);
+    font-size: 21.3px;
+    margin-bottom: 5px;
+}
+
+p{
+    color: rgb(48, 46, 46);
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+
+.pages_a{
+    color: rgb(78, 72, 72);
+    transition: all 200ms ease-in-out;
+}
+
+.pages_a:hover{
+    color: rgb(17, 14, 14);
+    text-shadow: 0px 0px 1px rgb(17, 14, 14);
+}
+
+.open_page {
+    display: block;
+    background-color: rgb(216, 216, 216);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 2px 2px;
+    width: 10%;
+    z-index: 10;
+    margin-bottom: 5px;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+
+.open_page:hover{
+    background-color: rgb(198, 196, 196);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 9.5%;
+    padding: 1px 2px;
+    box-shadow: 0px 0px 6px rgb(38, 38, 38);
+    margin-top: 10px;
+} 
+
+.products-img{
+    width: 330px;
+    height: 375px;
+    border-radius: 20px;
+}
+
+.products{
+    background-color: rgb(201, 198, 198);
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 12px;
+    margin-top: 75px;
+    width: 330px;
+    height: 530px;
+    transition: all 200ms ease-in-out;
+}
+
+.products:hover{
+    background-color: rgb(179, 174, 174);
+    box-shadow: 0px 0px 10px rgb(38, 38, 38);
+    border-radius: 24px;
+}
+
+.footer_a{
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+
+.product_text{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.add_buttons{
+    width: 150px;
+    height: 35px;
+    color: white;
+    padding: 15px 25px;
+    background-color: #1343c8;
+    border: 0px solid #1343c8;
+    border-radius: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    transition: all 200ms ease-in-out;
+}
+
+.add_buttons:hover{
+    background-color: #10369f;
+    padding: 17.5px 40px;
+}
+
+.auth_reg_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17.5%;
+    border: 1px solid rgb(47, 42, 42);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 40%;
+    gap: 20px;
+    transition: all 300ms ease-in-out;
+}
+
+.auth_reg_form:hover{
+    border: 5.5px dotted rgb(47, 42, 42);
+    border-radius: 22.5px;
+    margin-left: 39.75%;
+}
+
+.error{
+    color: rgb(123, 15, 15);
+    font-size: 24px;
+    user-select: none;
+}
+
+::placeholder {
+    color: rgb(176, 173, 173);
+    transition: all 200ms ease-in-out;
+}
+
+
+@keyframes headerStartAnimation {
+    0% {
+        margin-top: -60px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}

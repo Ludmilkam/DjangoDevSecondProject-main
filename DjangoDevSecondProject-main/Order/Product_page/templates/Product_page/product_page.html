@@ -1,0 +1,49 @@
+{% extends 'APP_Settings/base.html' %}
+{% load static %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static  'APP_Settings/css/base.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="open_page">
+        <p>Сторінка продуктів</p>
+    </div>
+    
+    <div class="products">
+        <img class="products-img" src="{% static  'APP_Settings/img/product1.png' %}" alt="product1">
+        <h1 class="product_text">Мобільний телефон Samsung</h1>
+        <p class="product_text">* Galaxy  A24 6/128GB Dark Red</p>
+        <a class="add_buttons" href="{% url 'shop_cart_page' %}">Додати</a>
+    </div>
+
+    <div class="products">
+        <img class="products-img" src="{% static  'APP_Settings/img/product2.png' %}" alt="product2">
+        <h1 class="product_text">Мобільний телефон Apple</h1>
+        <p class="product_text">* iPhone 15 128GB Black</p>
+        <a class="add_buttons" href="{% url 'shop_cart_page' %}">Додати</a>
+    </div>
+
+    <div class="products">
+        <img class="products-img" src="{% static  'APP_Settings/img/product3.png' %}" alt="product3">
+        <h1 class="product_text">Мобільний телефон Samsung</h1>
+        <p class="product_text">* Galaxy M34 5G 8/128GB Dark Blue</p>
+        <a class="add_buttons" href="{% url 'shop_cart_page' %}">Додати</a>
+    </div>
+
+    <div class="products">
+        <img class="products-img" src="{% static  'APP_Settings/img/product4.png' %}" alt="product4">
+        <h1 class="product_text">Мобільний телефон Motorola</h1>
+        <p class="product_text">* G54 Power 12/256GB eSim Pearl Blue</p>
+        <a class="add_buttons" href="{% url 'shop_cart_page' %}">Додати</a>
+    </div>
+
+    <div class="products">
+        <img class="products-img" src="{% static  'APP_Settings/img/product5.png' %}" alt="product5">
+        <h1 class="product_text">Мобільний телефон Samsung</h1>
+        <p class="product_text">* Galaxy S21 FE 6/128GB Olive</p>
+        <a class="add_buttons" href="{% url 'shop_cart_page' %}">Додати</a>
+    </div>
+
+    
+{% endblock %}
